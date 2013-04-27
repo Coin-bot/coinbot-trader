@@ -15,6 +15,7 @@
 import base64
 import hashlib
 import hmac
+import json
 import time
 import urllib
 
@@ -47,8 +48,8 @@ class BaseMtGoxHandler(webapp2.RequestHandler):
             'Rest-Key': config.MTGOX_KEY,
             'Rest-Sign': hmac_val,
         }
-
-        result = urlfetch.fetch(url=self.MTGOX_API_BASE + path, method=method, payload=data, headers=headers)
+        payload = json.dumps(data)
+        result = urlfetch.fetch(url=self.MTGOX_API_BASE + path, method=method, payload=payload, headers=headers)
         return result
 
 
