@@ -8,6 +8,6 @@ How to use Coinbot-Trader?
 ---------------------------
 Coinbot-Trader is an GAE application, please follow instructions from Google for how to deploy GAE application. <a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading">https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading</a>
 
-Before you upload the application, please update the application name in app.yaml and your MtGox Api key and secret in config.py
+Before you upload the application, please update the application name in *app.yaml* and your MtGox Api information and the secret in *config.py*
 
 After your application deployed, please view document of Coin-bot for how to use this.

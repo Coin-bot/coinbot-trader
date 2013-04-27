@@ -16,7 +16,7 @@ import base64
 import hashlib
 import hmac
 import time
-from google.appengine.dist27 import urllib
+import urllib
 
 import webapp2
 from google.appengine.api import urlfetch
