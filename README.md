@@ -1,2 +1,2 @@
-coinbot-trader
+Coinbot-Trader
 ==============
